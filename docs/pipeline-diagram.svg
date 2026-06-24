@@ -1,0 +1,273 @@
+<svg viewBox="0 0 1200 1440" width="1200" height="1440" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, 'Courier New', monospace">
+
+<defs>
+  <style>
+    .bg { fill: #000714; }
+    .header { fill: #06101F; }
+    .title { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 700; font-size: 38px; fill: #E0F4FF; }
+    .subtitle { font-size: 17px; fill: #00D4FF; opacity: 0; animation: fadeIn 1s ease-out 0.3s forwards; }
+    .card-title { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 700; font-size: 22px; fill: #E0F4FF; }
+    .card-sub { font-size: 15px; fill: #8CB2C7; }
+    .num { font-weight: 700; font-size: 20px; fill: #00D4FF; }
+    .digit { fill: #00A3FF; font-size: 13px; }
+    .spine { stroke: #00A3FF; stroke-width: 2; opacity: 0.5; }
+    .spine-glow { stroke: #00D4FF; stroke-width: 8; opacity: 0.35; filter: blur(6px); animation: pulse 3s ease-in-out infinite; }
+    .connector { stroke: #00A3FF; stroke-width: 2; opacity: 0.55; }
+    .node-circle { fill: #081C36; stroke: #00A3FF; stroke-width: 2; }
+    .node-glow { fill: #00D4FF; opacity: 0.45; filter: blur(8px); animation: pulse 2.6s ease-in-out infinite; }
+    .card-rect { fill: rgba(10,32,60,0.65); stroke: rgba(0,163,255,0.55); stroke-width: 2; }
+    .card-glow { fill: #00A3FF; opacity: 0.18; filter: blur(10px); }
+    .accent-line { fill: #00A3FF; }
+    .accent-glow { fill: #00D4FF; opacity: 0.5; filter: blur(8px); animation: pulse 3s ease-in-out infinite; }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.55; }
+    }
+    @keyframes fall {
+      from { transform: translateY(-40px); }
+      to { transform: translateY(1480px); }
+    }
+
+    .stage { opacity: 0; animation: fadeInUp 0.7s ease-out forwards; }
+    .digitfall { animation: fall linear infinite; }
+  </style>
+</defs>
+
+<rect class="bg" x="0" y="0" width="1200" height="1440"/>
+<text class="digit digitfall" x="19" y="-40" opacity="0.32" style="animation-duration:15.5s; animation-delay:-3.9s;">0</text>
+<text class="digit digitfall" x="19" y="-62" opacity="0.27" style="animation-duration:15.5s; animation-delay:-3.9s;">0</text>
+<text class="digit digitfall" x="19" y="-84" opacity="0.22" style="animation-duration:15.5s; animation-delay:-3.9s;">1</text>
+<text class="digit digitfall" x="45" y="-40" opacity="0.32" style="animation-duration:15.2s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="45" y="-62" opacity="0.27" style="animation-duration:15.2s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="45" y="-84" opacity="0.22" style="animation-duration:15.2s; animation-delay:-2.1s;">0</text>
+<text class="digit digitfall" x="87" y="-40" opacity="0.32" style="animation-duration:7.8s; animation-delay:-4.2s;">0</text>
+<text class="digit digitfall" x="87" y="-62" opacity="0.27" style="animation-duration:7.8s; animation-delay:-4.2s;">0</text>
+<text class="digit digitfall" x="87" y="-84" opacity="0.22" style="animation-duration:7.8s; animation-delay:-4.2s;">1</text>
+<text class="digit digitfall" x="116" y="-40" opacity="0.32" style="animation-duration:15.8s; animation-delay:-0.5s;">1</text>
+<text class="digit digitfall" x="116" y="-62" opacity="0.27" style="animation-duration:15.8s; animation-delay:-0.5s;">1</text>
+<text class="digit digitfall" x="116" y="-84" opacity="0.22" style="animation-duration:15.8s; animation-delay:-0.5s;">0</text>
+<text class="digit digitfall" x="116" y="-106" opacity="0.17" style="animation-duration:15.8s; animation-delay:-0.5s;">0</text>
+<text class="digit digitfall" x="159" y="-40" opacity="0.32" style="animation-duration:12.0s; animation-delay:-6.8s;">0</text>
+<text class="digit digitfall" x="159" y="-62" opacity="0.27" style="animation-duration:12.0s; animation-delay:-6.8s;">1</text>
+<text class="digit digitfall" x="159" y="-84" opacity="0.22" style="animation-duration:12.0s; animation-delay:-6.8s;">0</text>
+<text class="digit digitfall" x="188" y="-40" opacity="0.32" style="animation-duration:12.1s; animation-delay:-6.2s;">1</text>
+<text class="digit digitfall" x="188" y="-62" opacity="0.27" style="animation-duration:12.1s; animation-delay:-6.2s;">1</text>
+<text class="digit digitfall" x="188" y="-84" opacity="0.22" style="animation-duration:12.1s; animation-delay:-6.2s;">1</text>
+<text class="digit digitfall" x="188" y="-106" opacity="0.17" style="animation-duration:12.1s; animation-delay:-6.2s;">1</text>
+<text class="digit digitfall" x="188" y="-128" opacity="0.12" style="animation-duration:12.1s; animation-delay:-6.2s;">1</text>
+<text class="digit digitfall" x="188" y="-150" opacity="0.07" style="animation-duration:12.1s; animation-delay:-6.2s;">1</text>
+<text class="digit digitfall" x="228" y="-40" opacity="0.32" style="animation-duration:14.1s; animation-delay:-7.0s;">0</text>
+<text class="digit digitfall" x="228" y="-62" opacity="0.27" style="animation-duration:14.1s; animation-delay:-7.0s;">1</text>
+<text class="digit digitfall" x="228" y="-84" opacity="0.22" style="animation-duration:14.1s; animation-delay:-7.0s;">1</text>
+<text class="digit digitfall" x="228" y="-106" opacity="0.17" style="animation-duration:14.1s; animation-delay:-7.0s;">1</text>
+<text class="digit digitfall" x="270" y="-40" opacity="0.32" style="animation-duration:9.6s; animation-delay:-9.8s;">1</text>
+<text class="digit digitfall" x="270" y="-62" opacity="0.27" style="animation-duration:9.6s; animation-delay:-9.8s;">0</text>
+<text class="digit digitfall" x="270" y="-84" opacity="0.22" style="animation-duration:9.6s; animation-delay:-9.8s;">1</text>
+<text class="digit digitfall" x="296" y="-40" opacity="0.32" style="animation-duration:15.4s; animation-delay:-4.2s;">1</text>
+<text class="digit digitfall" x="296" y="-62" opacity="0.27" style="animation-duration:15.4s; animation-delay:-4.2s;">1</text>
+<text class="digit digitfall" x="296" y="-84" opacity="0.22" style="animation-duration:15.4s; animation-delay:-4.2s;">1</text>
+<text class="digit digitfall" x="342" y="-40" opacity="0.32" style="animation-duration:12.2s; animation-delay:-4.6s;">1</text>
+<text class="digit digitfall" x="342" y="-62" opacity="0.27" style="animation-duration:12.2s; animation-delay:-4.6s;">1</text>
+<text class="digit digitfall" x="342" y="-84" opacity="0.22" style="animation-duration:12.2s; animation-delay:-4.6s;">0</text>
+<text class="digit digitfall" x="363" y="-40" opacity="0.32" style="animation-duration:13.6s; animation-delay:-3.1s;">1</text>
+<text class="digit digitfall" x="363" y="-62" opacity="0.27" style="animation-duration:13.6s; animation-delay:-3.1s;">1</text>
+<text class="digit digitfall" x="363" y="-84" opacity="0.22" style="animation-duration:13.6s; animation-delay:-3.1s;">1</text>
+<text class="digit digitfall" x="363" y="-106" opacity="0.17" style="animation-duration:13.6s; animation-delay:-3.1s;">0</text>
+<text class="digit digitfall" x="363" y="-128" opacity="0.12" style="animation-duration:13.6s; animation-delay:-3.1s;">1</text>
+<text class="digit digitfall" x="363" y="-150" opacity="0.07" style="animation-duration:13.6s; animation-delay:-3.1s;">1</text>
+<text class="digit digitfall" x="402" y="-40" opacity="0.32" style="animation-duration:12.5s; animation-delay:-4.9s;">1</text>
+<text class="digit digitfall" x="402" y="-62" opacity="0.27" style="animation-duration:12.5s; animation-delay:-4.9s;">0</text>
+<text class="digit digitfall" x="402" y="-84" opacity="0.22" style="animation-duration:12.5s; animation-delay:-4.9s;">0</text>
+<text class="digit digitfall" x="402" y="-106" opacity="0.17" style="animation-duration:12.5s; animation-delay:-4.9s;">1</text>
+<text class="digit digitfall" x="445" y="-40" opacity="0.32" style="animation-duration:15.3s; animation-delay:-5.0s;">1</text>
+<text class="digit digitfall" x="445" y="-62" opacity="0.27" style="animation-duration:15.3s; animation-delay:-5.0s;">1</text>
+<text class="digit digitfall" x="445" y="-84" opacity="0.22" style="animation-duration:15.3s; animation-delay:-5.0s;">1</text>
+<text class="digit digitfall" x="445" y="-106" opacity="0.17" style="animation-duration:15.3s; animation-delay:-5.0s;">0</text>
+<text class="digit digitfall" x="481" y="-40" opacity="0.32" style="animation-duration:14.8s; animation-delay:-2.8s;">1</text>
+<text class="digit digitfall" x="481" y="-62" opacity="0.27" style="animation-duration:14.8s; animation-delay:-2.8s;">1</text>
+<text class="digit digitfall" x="481" y="-84" opacity="0.22" style="animation-duration:14.8s; animation-delay:-2.8s;">0</text>
+<text class="digit digitfall" x="481" y="-106" opacity="0.17" style="animation-duration:14.8s; animation-delay:-2.8s;">0</text>
+<text class="digit digitfall" x="481" y="-128" opacity="0.12" style="animation-duration:14.8s; animation-delay:-2.8s;">0</text>
+<text class="digit digitfall" x="481" y="-150" opacity="0.07" style="animation-duration:14.8s; animation-delay:-2.8s;">0</text>
+<text class="digit digitfall" x="507" y="-40" opacity="0.32" style="animation-duration:9.1s; animation-delay:-2.3s;">0</text>
+<text class="digit digitfall" x="507" y="-62" opacity="0.27" style="animation-duration:9.1s; animation-delay:-2.3s;">1</text>
+<text class="digit digitfall" x="507" y="-84" opacity="0.22" style="animation-duration:9.1s; animation-delay:-2.3s;">1</text>
+<text class="digit digitfall" x="507" y="-106" opacity="0.17" style="animation-duration:9.1s; animation-delay:-2.3s;">0</text>
+<text class="digit digitfall" x="507" y="-128" opacity="0.12" style="animation-duration:9.1s; animation-delay:-2.3s;">0</text>
+<text class="digit digitfall" x="507" y="-150" opacity="0.07" style="animation-duration:9.1s; animation-delay:-2.3s;">1</text>
+<text class="digit digitfall" x="550" y="-40" opacity="0.32" style="animation-duration:12.5s; animation-delay:-3.2s;">0</text>
+<text class="digit digitfall" x="550" y="-62" opacity="0.27" style="animation-duration:12.5s; animation-delay:-3.2s;">1</text>
+<text class="digit digitfall" x="550" y="-84" opacity="0.22" style="animation-duration:12.5s; animation-delay:-3.2s;">1</text>
+<text class="digit digitfall" x="550" y="-106" opacity="0.17" style="animation-duration:12.5s; animation-delay:-3.2s;">1</text>
+<text class="digit digitfall" x="586" y="-40" opacity="0.32" style="animation-duration:10.5s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="586" y="-62" opacity="0.27" style="animation-duration:10.5s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="586" y="-84" opacity="0.22" style="animation-duration:10.5s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="586" y="-106" opacity="0.17" style="animation-duration:10.5s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="586" y="-128" opacity="0.12" style="animation-duration:10.5s; animation-delay:-4.8s;">1</text>
+<text class="digit digitfall" x="586" y="-150" opacity="0.07" style="animation-duration:10.5s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="612" y="-40" opacity="0.32" style="animation-duration:10.1s; animation-delay:-0.5s;">0</text>
+<text class="digit digitfall" x="612" y="-62" opacity="0.27" style="animation-duration:10.1s; animation-delay:-0.5s;">0</text>
+<text class="digit digitfall" x="612" y="-84" opacity="0.22" style="animation-duration:10.1s; animation-delay:-0.5s;">1</text>
+<text class="digit digitfall" x="644" y="-40" opacity="0.32" style="animation-duration:7.6s; animation-delay:-2.1s;">0</text>
+<text class="digit digitfall" x="644" y="-62" opacity="0.27" style="animation-duration:7.6s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="644" y="-84" opacity="0.22" style="animation-duration:7.6s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="644" y="-106" opacity="0.17" style="animation-duration:7.6s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="644" y="-128" opacity="0.12" style="animation-duration:7.6s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="644" y="-150" opacity="0.07" style="animation-duration:7.6s; animation-delay:-2.1s;">0</text>
+<text class="digit digitfall" x="683" y="-40" opacity="0.32" style="animation-duration:14.6s; animation-delay:-9.9s;">1</text>
+<text class="digit digitfall" x="683" y="-62" opacity="0.27" style="animation-duration:14.6s; animation-delay:-9.9s;">1</text>
+<text class="digit digitfall" x="683" y="-84" opacity="0.22" style="animation-duration:14.6s; animation-delay:-9.9s;">1</text>
+<text class="digit digitfall" x="683" y="-106" opacity="0.17" style="animation-duration:14.6s; animation-delay:-9.9s;">0</text>
+<text class="digit digitfall" x="683" y="-128" opacity="0.12" style="animation-duration:14.6s; animation-delay:-9.9s;">0</text>
+<text class="digit digitfall" x="683" y="-150" opacity="0.07" style="animation-duration:14.6s; animation-delay:-9.9s;">0</text>
+<text class="digit digitfall" x="725" y="-40" opacity="0.32" style="animation-duration:13.7s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="725" y="-62" opacity="0.27" style="animation-duration:13.7s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="725" y="-84" opacity="0.22" style="animation-duration:13.7s; animation-delay:-4.8s;">1</text>
+<text class="digit digitfall" x="725" y="-106" opacity="0.17" style="animation-duration:13.7s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="750" y="-40" opacity="0.32" style="animation-duration:13.8s; animation-delay:-3.0s;">1</text>
+<text class="digit digitfall" x="750" y="-62" opacity="0.27" style="animation-duration:13.8s; animation-delay:-3.0s;">1</text>
+<text class="digit digitfall" x="750" y="-84" opacity="0.22" style="animation-duration:13.8s; animation-delay:-3.0s;">0</text>
+<text class="digit digitfall" x="797" y="-40" opacity="0.32" style="animation-duration:13.9s; animation-delay:-5.3s;">0</text>
+<text class="digit digitfall" x="797" y="-62" opacity="0.27" style="animation-duration:13.9s; animation-delay:-5.3s;">0</text>
+<text class="digit digitfall" x="797" y="-84" opacity="0.22" style="animation-duration:13.9s; animation-delay:-5.3s;">0</text>
+<text class="digit digitfall" x="797" y="-106" opacity="0.17" style="animation-duration:13.9s; animation-delay:-5.3s;">1</text>
+<text class="digit digitfall" x="797" y="-128" opacity="0.12" style="animation-duration:13.9s; animation-delay:-5.3s;">0</text>
+<text class="digit digitfall" x="827" y="-40" opacity="0.32" style="animation-duration:11.7s; animation-delay:-3.6s;">0</text>
+<text class="digit digitfall" x="827" y="-62" opacity="0.27" style="animation-duration:11.7s; animation-delay:-3.6s;">1</text>
+<text class="digit digitfall" x="827" y="-84" opacity="0.22" style="animation-duration:11.7s; animation-delay:-3.6s;">1</text>
+<text class="digit digitfall" x="864" y="-40" opacity="0.32" style="animation-duration:8.7s; animation-delay:-6.1s;">1</text>
+<text class="digit digitfall" x="864" y="-62" opacity="0.27" style="animation-duration:8.7s; animation-delay:-6.1s;">1</text>
+<text class="digit digitfall" x="864" y="-84" opacity="0.22" style="animation-duration:8.7s; animation-delay:-6.1s;">1</text>
+<text class="digit digitfall" x="864" y="-106" opacity="0.17" style="animation-duration:8.7s; animation-delay:-6.1s;">0</text>
+<text class="digit digitfall" x="864" y="-128" opacity="0.12" style="animation-duration:8.7s; animation-delay:-6.1s;">0</text>
+<text class="digit digitfall" x="895" y="-40" opacity="0.32" style="animation-duration:9.0s; animation-delay:-2.0s;">1</text>
+<text class="digit digitfall" x="895" y="-62" opacity="0.27" style="animation-duration:9.0s; animation-delay:-2.0s;">0</text>
+<text class="digit digitfall" x="895" y="-84" opacity="0.22" style="animation-duration:9.0s; animation-delay:-2.0s;">1</text>
+<text class="digit digitfall" x="895" y="-106" opacity="0.17" style="animation-duration:9.0s; animation-delay:-2.0s;">1</text>
+<text class="digit digitfall" x="929" y="-40" opacity="0.32" style="animation-duration:14.5s; animation-delay:-1.2s;">0</text>
+<text class="digit digitfall" x="929" y="-62" opacity="0.27" style="animation-duration:14.5s; animation-delay:-1.2s;">1</text>
+<text class="digit digitfall" x="929" y="-84" opacity="0.22" style="animation-duration:14.5s; animation-delay:-1.2s;">0</text>
+<text class="digit digitfall" x="929" y="-106" opacity="0.17" style="animation-duration:14.5s; animation-delay:-1.2s;">1</text>
+<text class="digit digitfall" x="929" y="-128" opacity="0.12" style="animation-duration:14.5s; animation-delay:-1.2s;">1</text>
+<text class="digit digitfall" x="929" y="-150" opacity="0.07" style="animation-duration:14.5s; animation-delay:-1.2s;">0</text>
+<text class="digit digitfall" x="974" y="-40" opacity="0.32" style="animation-duration:11.2s; animation-delay:-7.4s;">0</text>
+<text class="digit digitfall" x="974" y="-62" opacity="0.27" style="animation-duration:11.2s; animation-delay:-7.4s;">0</text>
+<text class="digit digitfall" x="974" y="-84" opacity="0.22" style="animation-duration:11.2s; animation-delay:-7.4s;">0</text>
+<text class="digit digitfall" x="997" y="-40" opacity="0.32" style="animation-duration:8.4s; animation-delay:-9.0s;">1</text>
+<text class="digit digitfall" x="997" y="-62" opacity="0.27" style="animation-duration:8.4s; animation-delay:-9.0s;">1</text>
+<text class="digit digitfall" x="997" y="-84" opacity="0.22" style="animation-duration:8.4s; animation-delay:-9.0s;">0</text>
+<text class="digit digitfall" x="997" y="-106" opacity="0.17" style="animation-duration:8.4s; animation-delay:-9.0s;">0</text>
+<text class="digit digitfall" x="1033" y="-40" opacity="0.32" style="animation-duration:7.1s; animation-delay:-9.7s;">0</text>
+<text class="digit digitfall" x="1033" y="-62" opacity="0.27" style="animation-duration:7.1s; animation-delay:-9.7s;">1</text>
+<text class="digit digitfall" x="1033" y="-84" opacity="0.22" style="animation-duration:7.1s; animation-delay:-9.7s;">0</text>
+<text class="digit digitfall" x="1074" y="-40" opacity="0.32" style="animation-duration:7.3s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="1074" y="-62" opacity="0.27" style="animation-duration:7.3s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="1074" y="-84" opacity="0.22" style="animation-duration:7.3s; animation-delay:-2.1s;">1</text>
+<text class="digit digitfall" x="1074" y="-106" opacity="0.17" style="animation-duration:7.3s; animation-delay:-2.1s;">0</text>
+<text class="digit digitfall" x="1104" y="-40" opacity="0.32" style="animation-duration:15.2s; animation-delay:-3.5s;">1</text>
+<text class="digit digitfall" x="1104" y="-62" opacity="0.27" style="animation-duration:15.2s; animation-delay:-3.5s;">0</text>
+<text class="digit digitfall" x="1104" y="-84" opacity="0.22" style="animation-duration:15.2s; animation-delay:-3.5s;">0</text>
+<text class="digit digitfall" x="1104" y="-106" opacity="0.17" style="animation-duration:15.2s; animation-delay:-3.5s;">0</text>
+<text class="digit digitfall" x="1104" y="-128" opacity="0.12" style="animation-duration:15.2s; animation-delay:-3.5s;">1</text>
+<text class="digit digitfall" x="1104" y="-150" opacity="0.07" style="animation-duration:15.2s; animation-delay:-3.5s;">0</text>
+<text class="digit digitfall" x="1139" y="-40" opacity="0.32" style="animation-duration:14.0s; animation-delay:-1.5s;">1</text>
+<text class="digit digitfall" x="1139" y="-62" opacity="0.27" style="animation-duration:14.0s; animation-delay:-1.5s;">0</text>
+<text class="digit digitfall" x="1139" y="-84" opacity="0.22" style="animation-duration:14.0s; animation-delay:-1.5s;">0</text>
+<text class="digit digitfall" x="1139" y="-106" opacity="0.17" style="animation-duration:14.0s; animation-delay:-1.5s;">1</text>
+<text class="digit digitfall" x="1190" y="-40" opacity="0.32" style="animation-duration:11.8s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="1190" y="-62" opacity="0.27" style="animation-duration:11.8s; animation-delay:-4.8s;">0</text>
+<text class="digit digitfall" x="1190" y="-84" opacity="0.22" style="animation-duration:11.8s; animation-delay:-4.8s;">0</text>
+<rect class="header" x="0" y="0" width="1200" height="190"/>
+<text class="title" x="600" y="84" text-anchor="middle" dominant-baseline="middle">SOCIAL MEDIA CONTENT MAKER AI</text>
+<text class="subtitle" x="600" y="130" text-anchor="middle" dominant-baseline="middle">&gt; от идеи до опубликованного поста — автономно, с твоим одобрением на каждом шаге</text>
+<rect class="accent-glow" x="0" y="184" width="1200" height="6"/>
+<rect class="accent-line" x="0" y="188" width="1200" height="2"/>
+<line class="spine-glow" x1="600" y1="270" x2="600" y2="1320"/>
+<line class="spine" x1="600" y1="270" x2="600" y2="1320"/>
+<g class="stage" style="animation-delay:0.0s;">
+<circle class="node-glow" cx="600" cy="270" r="32"/>
+<circle class="node-circle" cx="600" cy="270" r="28"/>
+<text class="num" x="600" y="270" text-anchor="middle" dominant-baseline="middle">01</text>
+<line class="connector" x1="628" y1="270" x2="668" y2="270"/>
+<rect class="card-glow" x="664" y="216" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="668" y="220" width="460" height="100" rx="16"/>
+<text class="card-title" x="696" y="254" dominant-baseline="middle">Идея или ссылка</text>
+<text class="card-sub" x="696" y="287" dominant-baseline="middle">о чём хочешь написать</text>
+</g>
+<g class="stage" style="animation-delay:0.7s;">
+<circle class="node-glow" cx="600" cy="420" r="32"/>
+<circle class="node-circle" cx="600" cy="420" r="28"/>
+<text class="num" x="600" y="420" text-anchor="middle" dominant-baseline="middle">02</text>
+<line class="connector" x1="532" y1="420" x2="572" y2="420"/>
+<rect class="card-glow" x="68" y="366" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="72" y="370" width="460" height="100" rx="16"/>
+<text class="card-title" x="100" y="404" dominant-baseline="middle">/social-post оркестратор</text>
+<text class="card-sub" x="100" y="437" dominant-baseline="middle">задаёт несколько вопросов</text>
+</g>
+<g class="stage" style="animation-delay:1.4s;">
+<circle class="node-glow" cx="600" cy="570" r="32"/>
+<circle class="node-circle" cx="600" cy="570" r="28"/>
+<text class="num" x="600" y="570" text-anchor="middle" dominant-baseline="middle">03</text>
+<line class="connector" x1="628" y1="570" x2="668" y2="570"/>
+<rect class="card-glow" x="664" y="516" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="668" y="520" width="460" height="100" rx="16"/>
+<text class="card-title" x="696" y="554" dominant-baseline="middle">Агент стратегии</text>
+<text class="card-sub" x="696" y="587" dominant-baseline="middle">хук, угол и CTA для каждой платформы</text>
+</g>
+<g class="stage" style="animation-delay:2.1s;">
+<circle class="node-glow" cx="600" cy="720" r="32"/>
+<circle class="node-circle" cx="600" cy="720" r="28"/>
+<text class="num" x="600" y="720" text-anchor="middle" dominant-baseline="middle">04</text>
+<line class="connector" x1="532" y1="720" x2="572" y2="720"/>
+<rect class="card-glow" x="68" y="666" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="72" y="670" width="460" height="100" rx="16"/>
+<text class="card-title" x="100" y="704" dominant-baseline="middle">4 копирайтера, параллельно</text>
+<text class="card-sub" x="100" y="737" dominant-baseline="middle">LinkedIn, X, Threads, TenChat</text>
+</g>
+<g class="stage" style="animation-delay:2.8s;">
+<circle class="node-glow" cx="600" cy="870" r="32"/>
+<circle class="node-circle" cx="600" cy="870" r="28"/>
+<text class="num" x="600" y="870" text-anchor="middle" dominant-baseline="middle">05</text>
+<line class="connector" x1="628" y1="870" x2="668" y2="870"/>
+<rect class="card-glow" x="664" y="816" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="668" y="820" width="460" height="100" rx="16"/>
+<text class="card-title" x="696" y="854" dominant-baseline="middle">Агент QA</text>
+<text class="card-sub" x="696" y="887" dominant-baseline="middle">проверяет голос бренда и лимиты</text>
+</g>
+<g class="stage" style="animation-delay:3.5s;">
+<circle class="node-glow" cx="600" cy="1020" r="32"/>
+<circle class="node-circle" cx="600" cy="1020" r="28"/>
+<text class="num" x="600" y="1020" text-anchor="middle" dominant-baseline="middle">06</text>
+<line class="connector" x1="532" y1="1020" x2="572" y2="1020"/>
+<rect class="card-glow" x="68" y="966" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="72" y="970" width="460" height="100" rx="16"/>
+<text class="card-title" x="100" y="1004" dominant-baseline="middle">Твоё одобрение</text>
+<text class="card-sub" x="100" y="1037" dominant-baseline="middle">проверяешь и правишь черновики</text>
+</g>
+<g class="stage" style="animation-delay:4.2s;">
+<circle class="node-glow" cx="600" cy="1170" r="32"/>
+<circle class="node-circle" cx="600" cy="1170" r="28"/>
+<text class="num" x="600" y="1170" text-anchor="middle" dominant-baseline="middle">07</text>
+<line class="connector" x1="628" y1="1170" x2="668" y2="1170"/>
+<rect class="card-glow" x="664" y="1116" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="668" y="1120" width="460" height="100" rx="16"/>
+<text class="card-title" x="696" y="1154" dominant-baseline="middle">Агент изображений</text>
+<text class="card-sub" x="696" y="1187" dominant-baseline="middle">предлагает промпт, потом генерирует</text>
+</g>
+<g class="stage" style="animation-delay:4.9s;">
+<circle class="node-glow" cx="600" cy="1320" r="32"/>
+<circle class="node-circle" cx="600" cy="1320" r="28"/>
+<text class="num" x="600" y="1320" text-anchor="middle" dominant-baseline="middle">08</text>
+<line class="connector" x1="532" y1="1320" x2="572" y2="1320"/>
+<rect class="card-glow" x="68" y="1266" width="468" height="108" rx="18"/>
+<rect class="card-rect" x="72" y="1270" width="460" height="100" rx="16"/>
+<text class="card-title" x="100" y="1304" dominant-baseline="middle">Postiz</text>
+<text class="card-sub" x="100" y="1337" dominant-baseline="middle">планирует и публикует посты</text>
+</g>
+</svg>

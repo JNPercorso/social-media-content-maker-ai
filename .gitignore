@@ -28,5 +28,6 @@ postiz_integrations.json
 
 # личные скриншоты и заметки, не часть переносимой системы
 *.png
+screenshots-source/
 examplesScills/
 plan for Zerocoder task.md
