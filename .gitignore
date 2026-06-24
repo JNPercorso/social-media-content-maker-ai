@@ -1,0 +1,29 @@
+# секреты и личные ключи
+.env
+
+# зависимости
+node_modules/
+
+# рабочий временный файл оркестратора (создаётся при запуске /social-post)
+temp/
+
+# архив сгенерированных постов — личный контент, не нужен для запуска системы
+posts/*.md
+posts/*.json
+posts/images/*
+!posts/.gitkeep
+!posts/images/.gitkeep
+
+# временные файлы публикации через Postiz (создаются postiz_publish.py)
+linkedin_post.json
+threads_post.json
+x_post.json
+threads_content.txt
+
+# personal Postiz integration IDs — у каждого свои, получаются через `npx postiz integrations:list`
+postiz_integrations.json
+
+# личные скриншоты и заметки, не часть переносимой системы
+*.png
+examplesScills/
+plan for Zerocoder task.md
